@@ -1,0 +1,30 @@
+[0.075s] Invoking command in '/home/pulak/ros2_workspace/build/sonar_slam_description': CMAKE_PREFIX_PATH=/home/pulak/ros2_workspace/install/my_first_robot:/opt/ros/humble /usr/bin/cmake /home/pulak/ros2_workspace/src/sonar_slam_description -DCMAKE_INSTALL_PREFIX=/home/pulak/ros2_workspace/install/sonar_slam_description
+[0.205s] -- The C compiler identification is GNU 11.4.0
+[0.308s] -- The CXX compiler identification is GNU 11.4.0
+[0.321s] -- Detecting C compiler ABI info
+[0.447s] -- Detecting C compiler ABI info - done
+[0.456s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.457s] -- Detecting C compile features
+[0.457s] -- Detecting C compile features - done
+[0.461s] -- Detecting CXX compiler ABI info
+[0.611s] -- Detecting CXX compiler ABI info - done
+[0.620s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.621s] -- Detecting CXX compile features
+[0.621s] -- Detecting CXX compile features - done
+[0.628s] -- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.951s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+[1.174s] -- Configuring done
+[1.185s] -- Generating done
+[1.188s] -- Build files have been written to: /home/pulak/ros2_workspace/build/sonar_slam_description
+[1.196s] Invoked command in '/home/pulak/ros2_workspace/build/sonar_slam_description' returned '0': CMAKE_PREFIX_PATH=/home/pulak/ros2_workspace/install/my_first_robot:/opt/ros/humble /usr/bin/cmake /home/pulak/ros2_workspace/src/sonar_slam_description -DCMAKE_INSTALL_PREFIX=/home/pulak/ros2_workspace/install/sonar_slam_description
+[1.198s] Invoking command in '/home/pulak/ros2_workspace/build/sonar_slam_description': CMAKE_PREFIX_PATH=/home/pulak/ros2_workspace/install/my_first_robot:/opt/ros/humble /usr/bin/cmake --build /home/pulak/ros2_workspace/build/sonar_slam_description -- -j8 -l8
+[1.273s] Invoked command in '/home/pulak/ros2_workspace/build/sonar_slam_description' returned '0': CMAKE_PREFIX_PATH=/home/pulak/ros2_workspace/install/my_first_robot:/opt/ros/humble /usr/bin/cmake --build /home/pulak/ros2_workspace/build/sonar_slam_description -- -j8 -l8
+[1.333s] Invoking command in '/home/pulak/ros2_workspace/build/sonar_slam_description': CMAKE_PREFIX_PATH=/home/pulak/ros2_workspace/install/my_first_robot:/opt/ros/humble /usr/bin/cmake --install /home/pulak/ros2_workspace/build/sonar_slam_description
+[1.344s] -- Install configuration: ""
+[1.344s] [31mCMake Error at cmake_install.cmake:46 (file):
+[1.344s]   file INSTALL cannot find
+[1.344s]   "/home/pulak/ros2_workspace/src/sonar_slam_description/urdf": No such file
+[1.344s]   or directory.
+[1.344s] 
+[1.345s] [0m
+[1.347s] Invoked command in '/home/pulak/ros2_workspace/build/sonar_slam_description' returned '1': CMAKE_PREFIX_PATH=/home/pulak/ros2_workspace/install/my_first_robot:/opt/ros/humble /usr/bin/cmake --install /home/pulak/ros2_workspace/build/sonar_slam_description

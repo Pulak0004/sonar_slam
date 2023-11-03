@@ -1,0 +1,4 @@
+[31mCMake Error at CMakeLists.txt:11 (if):
+  Flow control statements are not properly nested.
+
+[0m

@@ -1,0 +1,45 @@
+[0.076s] Invoking command in '/home/pulak/ros2_workspace/src/build/sonar_slam_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/pulak/ros2_workspace/src/sonar_slam_description -DCMAKE_INSTALL_PREFIX=/home/pulak/ros2_workspace/src/install/sonar_slam_description
+[0.166s] -- The C compiler identification is GNU 11.4.0
+[0.245s] -- The CXX compiler identification is GNU 11.4.0
+[0.266s] -- Detecting C compiler ABI info
+[0.392s] -- Detecting C compiler ABI info - done
+[0.413s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.413s] -- Detecting C compile features
+[0.414s] -- Detecting C compile features - done
+[0.422s] -- Detecting CXX compiler ABI info
+[0.562s] -- Detecting CXX compiler ABI info - done
+[0.572s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.572s] -- Detecting CXX compile features
+[0.573s] -- Detecting CXX compile features - done
+[0.581s] -- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.839s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+[1.016s] -- Configuring done
+[1.025s] -- Generating done
+[1.028s] -- Build files have been written to: /home/pulak/ros2_workspace/src/build/sonar_slam_description
+[1.040s] Invoked command in '/home/pulak/ros2_workspace/src/build/sonar_slam_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/pulak/ros2_workspace/src/sonar_slam_description -DCMAKE_INSTALL_PREFIX=/home/pulak/ros2_workspace/src/install/sonar_slam_description
+[1.043s] Invoking command in '/home/pulak/ros2_workspace/src/build/sonar_slam_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/pulak/ros2_workspace/src/build/sonar_slam_description -- -j8 -l8
+[1.128s] Invoked command in '/home/pulak/ros2_workspace/src/build/sonar_slam_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/pulak/ros2_workspace/src/build/sonar_slam_description -- -j8 -l8
+[1.220s] Invoking command in '/home/pulak/ros2_workspace/src/build/sonar_slam_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/pulak/ros2_workspace/src/build/sonar_slam_description
+[1.243s] -- Install configuration: ""
+[1.243s] -- Installing: /home/pulak/ros2_workspace/src/install/sonar_slam_description/share/sonar_slam_description//urdf
+[1.243s] -- Installing: /home/pulak/ros2_workspace/src/install/sonar_slam_description/share/sonar_slam_description//urdf/sonar_slam.urdf
+[1.244s] -- Installing: /home/pulak/ros2_workspace/src/install/sonar_slam_description/share/sonar_slam_description//launch
+[1.244s] -- Installing: /home/pulak/ros2_workspace/src/install/sonar_slam_description/share/sonar_slam_description//launch/display.launch.xml
+[1.244s] -- Installing: /home/pulak/ros2_workspace/src/install/sonar_slam_description/share/sonar_slam_description//rviz
+[1.245s] -- Installing: /home/pulak/ros2_workspace/src/install/sonar_slam_description/share/sonar_slam_description//rviz/sonar_slam_config.rviz
+[1.245s] -- Installing: /home/pulak/ros2_workspace/src/install/sonar_slam_description/share/ament_index/resource_index/package_run_dependencies/sonar_slam_description
+[1.246s] -- Installing: /home/pulak/ros2_workspace/src/install/sonar_slam_description/share/ament_index/resource_index/parent_prefix_path/sonar_slam_description
+[1.247s] -- Installing: /home/pulak/ros2_workspace/src/install/sonar_slam_description/share/sonar_slam_description/environment/ament_prefix_path.sh
+[1.247s] -- Installing: /home/pulak/ros2_workspace/src/install/sonar_slam_description/share/sonar_slam_description/environment/ament_prefix_path.dsv
+[1.248s] -- Installing: /home/pulak/ros2_workspace/src/install/sonar_slam_description/share/sonar_slam_description/environment/path.sh
+[1.248s] -- Installing: /home/pulak/ros2_workspace/src/install/sonar_slam_description/share/sonar_slam_description/environment/path.dsv
+[1.249s] -- Installing: /home/pulak/ros2_workspace/src/install/sonar_slam_description/share/sonar_slam_description/local_setup.bash
+[1.249s] -- Installing: /home/pulak/ros2_workspace/src/install/sonar_slam_description/share/sonar_slam_description/local_setup.sh
+[1.250s] -- Installing: /home/pulak/ros2_workspace/src/install/sonar_slam_description/share/sonar_slam_description/local_setup.zsh
+[1.250s] -- Installing: /home/pulak/ros2_workspace/src/install/sonar_slam_description/share/sonar_slam_description/local_setup.dsv
+[1.251s] -- Installing: /home/pulak/ros2_workspace/src/install/sonar_slam_description/share/sonar_slam_description/package.dsv
+[1.252s] -- Installing: /home/pulak/ros2_workspace/src/install/sonar_slam_description/share/ament_index/resource_index/packages/sonar_slam_description
+[1.252s] -- Installing: /home/pulak/ros2_workspace/src/install/sonar_slam_description/share/sonar_slam_description/cmake/sonar_slam_descriptionConfig.cmake
+[1.253s] -- Installing: /home/pulak/ros2_workspace/src/install/sonar_slam_description/share/sonar_slam_description/cmake/sonar_slam_descriptionConfig-version.cmake
+[1.253s] -- Installing: /home/pulak/ros2_workspace/src/install/sonar_slam_description/share/sonar_slam_description/package.xml
+[1.259s] Invoked command in '/home/pulak/ros2_workspace/src/build/sonar_slam_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/pulak/ros2_workspace/src/build/sonar_slam_description

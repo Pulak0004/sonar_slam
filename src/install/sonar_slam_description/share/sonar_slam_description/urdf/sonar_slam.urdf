@@ -1,0 +1,203 @@
+<?xml version="1.0"?>
+<robot name="sonar_slam" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+    <xacro:macro name="box_inertia" params="m l w h xyz rpy">
+        <inertial>
+            <origin xyz="${xyz}" rpy="${rpy}" />
+            <mass value="${m}" />
+            <inertia ixx="${(m/12) * (h*h + l*l)}" ixy="0" ixz="0"
+                     iyy="${(m/12) * (w*w + l*l)}" iyz="0"
+                     izz="${(m/12) * (w*w + h*h)}" />
+        </inertial>
+    </xacro:macro>
+
+    <xacro:macro name="cylinder_inertia" params="m r h xyz rpy">
+        <inertial>
+            <origin xyz="${xyz}" rpy="${rpy}" />
+            <mass value="${m}" />
+            <inertia ixx="${(m/12) * (3*r*r + h*h)}" ixy="0" ixz="0"
+                     iyy="${(m/12) * (3*r*r + h*h)}" iyz="0"
+                     izz="${(m/2) * (r*r)}" />
+        </inertial>
+    </xacro:macro>
+
+    <xacro:macro name="sphere_inertia" params="m r xyz rpy">
+        <inertial>
+            <origin xyz="${xyz}" rpy="${rpy}" />
+            <mass value="${m}" />
+            <inertia ixx="${(2/5) * m * r * r}" ixy="0" ixz="0"
+                     iyy="${(2/5) * m * r * r}" iyz="0"
+                     izz="${(2/5) * m * r * r}" />
+        </inertial>
+    </xacro:macro>
+
+    <link name="Base_footprint">
+    </link>
+    
+    <link name="base_link">
+        <visual>
+            <geometry>
+                <box size="0.2 0.22 0.004" />
+            </geometry>
+            <origin xyz="0 0 0.002" rpy="0 0 0" />
+        </visual>
+        <collision>
+            <geometry>
+                <box size="0.2 0.22 0.004" />
+            </geometry>
+            <origin xyz="0 0 0.002" rpy="0 0 0" />
+        </collision>
+        <xacro:box_inertia m="0.1" l="0.2" w="0.22" h="0.004"
+                           xyz="0 0 0.002" rpy="0 0 0" />
+    </link>
+
+    <link name="Battery">
+        <visual>
+            <geometry>
+                <box size="0.15 0.05 0.04" />
+            </geometry>
+            <origin xyz="0 0 0.02" rpy="0 0 0" />
+        </visual>
+        <collision>
+            <geometry>
+                <box size="0.15 0.05 0.04" />
+            </geometry>
+            <origin xyz="0 0 0.02" rpy="0 0 0" />
+        </collision>
+        <xacro:box_inertia m="0.4" l="0.15" w="0.05" h="0.04"
+                           xyz="0 0 0.02" rpy="0 0 0" />
+    </link>
+
+    <link name="Servo">
+        <visual>
+            <geometry>
+                <cylinder radius="0.01" length="0.05" />
+            </geometry>
+            <origin xyz="0 0 0.025" rpy="0 0 0" />
+        </visual>
+        <collision>
+            <geometry>
+                <cylinder radius="0.01" length="0.05" />
+            </geometry>
+            <origin xyz="0 0 0.025" rpy="0 0 0" />
+        </collision>
+        <xacro:cylinder_inertia m="0.08" r="0.01" h="0.05"
+                                xyz="0 0 0.025" rpy="0 0 0" />
+    </link>
+
+    <link name="Right_back_wheel">
+        <visual>
+            <geometry>
+                <cylinder radius="0.03" length="0.01" />
+            </geometry>
+            <origin xyz="0 -0.005 0" rpy="1.571 0 0" />
+        </visual>
+        <collision>
+            <geometry>
+                <cylinder radius="0.03" length="0.01" />
+            </geometry>
+            <origin xyz="0 -0.005 0" rpy="1.571 0 0" />
+        </collision>
+        <xacro:cylinder_inertia m="0.4" r="0.03" h="0.01"
+                                xyz="0 -0.005 0" rpy="1.571 0 0" />
+    </link>
+
+    <link name="Left_back_wheel">
+        <visual>
+            <geometry>
+                <cylinder radius="0.03" length="0.01" />
+            </geometry>
+            <origin xyz="0 0.005 0" rpy="1.571 0 0" />
+        </visual>
+        <collision>
+            <geometry>
+                <cylinder radius="0.03" length="0.01" />
+            </geometry>
+            <origin xyz="0 0.005 0" rpy="1.571 0 0" />
+        </collision>
+        <xacro:cylinder_inertia m="0.4" r="0.03" h="0.01"
+                                xyz="0 0.005 0" rpy="1.571 0 0" />
+    </link>
+
+    <link name="Right_front_wheel">
+        <visual>
+            <geometry>
+                <cylinder radius="0.03" length="0.01" />
+            </geometry>
+            <origin xyz="0 -0.005 0" rpy="1.571 0 0" />
+        </visual>
+        <collision>
+            <geometry>
+                <cylinder radius="0.03" length="0.01" />
+            </geometry>
+            <origin xyz="0 -0.005 0" rpy="1.571 0 0" />
+        </collision>
+        <xacro:cylinder_inertia m="0.4" r="0.03" h="0.01"
+                                xyz="0 -0.005 0" rpy="1.571 0 0" />
+    </link>
+
+    <link name="Left_front_wheel">
+        <visual>
+            <geometry>
+                <cylinder radius="0.03" length="0.01" />
+            </geometry>
+            <origin xyz="0 0.005 0" rpy="1.571 0 0" />
+        </visual>
+        <collision>
+            <geometry>
+                <cylinder radius="0.03" length="0.01" />
+            </geometry>
+            <origin xyz="0 0.005 0" rpy="1.571 0 0" />
+        </collision>
+        <xacro:cylinder_inertia m="0.4" r="0.03" h="0.01"
+                                xyz="0 0.005 0" rpy="1.571 0 0" />
+    </link>
+
+    <joint name="base_footprint_base_link_joint" type="fixed">
+        <parent link="Base_footprint" />
+        <child link="base_link" />
+        <origin xyz="0 0 0.03" rpy="0 0 0" />
+    </joint>
+        
+    <joint name="base_battery_joint" type="fixed">
+        <parent link="base_link" />
+        <child link="Battery" />
+        <origin xyz="0 0 0.004" rpy="0 0 0" />
+    </joint>
+
+    <joint name="battery_servo_joint" type="revolute">
+        <parent link="Battery" />
+        <child link="Servo" />
+        <origin xyz="0 0 0.04" rpy="0 0 0" />
+        <axis xyz="0 0 1" />
+        <limit lower="-1.571" upper="1.571" effort="5" velocity="5" />
+    </joint>
+
+    <joint name="right_back_wheel_joint" type="continuous">
+        <parent link="base_link" />
+        <child link="Right_back_wheel" />
+        <origin xyz="-0.07 -0.11 0" rpy="0 0 0" />
+        <axis xyz="0 1 0" />
+    </joint>
+
+    <joint name="left_back_wheel_joint" type="continuous">
+        <parent link="base_link" />
+        <child link="Left_back_wheel" />
+        <origin xyz="-0.07 0.11 0" rpy="0 0 0" />
+        <axis xyz="0 1 0" />
+    </joint>
+
+    <joint name="right_front_wheel_joint" type="continuous">
+        <parent link="base_link" />
+        <child link="Right_front_wheel" />
+        <origin xyz="0.07 -0.11 0" rpy="0 0 0" />
+        <axis xyz="0 1 0" />
+    </joint>
+
+    <joint name="left_front_wheel_joint" type="continuous">
+        <parent link="base_link" />
+        <child link="Left_front_wheel" />
+        <origin xyz="0.07 0.11 0" rpy="0 0 0" />
+        <axis xyz="0 1 0" />
+    </joint>
+</robot>
