@@ -1,2 +1,0 @@
-Invoking command in '/home/pulak/ros2_workspace/build/sonar_slam_bringup': /usr/bin/cmake --build /home/pulak/ros2_workspace/build/sonar_slam_bringup -- -j8 -l8
-Invoked command in '/home/pulak/ros2_workspace/build/sonar_slam_bringup' returned '2': /usr/bin/cmake --build /home/pulak/ros2_workspace/build/sonar_slam_bringup -- -j8 -l8

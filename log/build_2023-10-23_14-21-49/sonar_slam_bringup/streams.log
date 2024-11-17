@@ -1,7 +1,0 @@
-[0.147s] Invoking command in '/home/pulak/ros2_workspace/build/sonar_slam_bringup': /usr/bin/cmake /home/pulak/ros2_workspace/src/sonar_slam_bringup -DCMAKE_INSTALL_PREFIX=/home/pulak/ros2_workspace/install/sonar_slam_bringup
-[0.165s] [31mCMake Error at CMakeLists.txt:11 (if):
-[0.165s]   Flow control statements are not properly nested.
-[0.165s] 
-[0.165s] [0m
-[0.165s] -- Configuring incomplete, errors occurred!
-[0.170s] Invoked command in '/home/pulak/ros2_workspace/build/sonar_slam_bringup' returned '1': /usr/bin/cmake /home/pulak/ros2_workspace/src/sonar_slam_bringup -DCMAKE_INSTALL_PREFIX=/home/pulak/ros2_workspace/install/sonar_slam_bringup

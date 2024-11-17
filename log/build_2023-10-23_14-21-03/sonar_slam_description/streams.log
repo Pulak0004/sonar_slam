@@ -1,1 +1,0 @@
-[0.082s] Invoking command in '/home/pulak/ros2_workspace/build/sonar_slam_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/pulak/ros2_workspace/build/sonar_slam_description -- -j8 -l8

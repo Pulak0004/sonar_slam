@@ -1,2 +1,0 @@
-Invoking command in '/home/pulak/ros2_workspace/build/sonar_slam_bringup': /usr/bin/cmake /home/pulak/ros2_workspace/src/sonar_slam_bringup -DCMAKE_INSTALL_PREFIX=/home/pulak/ros2_workspace/install/sonar_slam_bringup
-Invoked command in '/home/pulak/ros2_workspace/build/sonar_slam_bringup' returned '1': /usr/bin/cmake /home/pulak/ros2_workspace/src/sonar_slam_bringup -DCMAKE_INSTALL_PREFIX=/home/pulak/ros2_workspace/install/sonar_slam_bringup

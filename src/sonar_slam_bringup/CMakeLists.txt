@@ -9,7 +9,7 @@ endif()
 find_package(ament_cmake REQUIRED)
 
 install(
-  DIRECTORY launch rviz worlds
+  DIRECTORY launch rviz worlds node
   DESTINATION share/${PROJECT_NAME}/
 )
 
